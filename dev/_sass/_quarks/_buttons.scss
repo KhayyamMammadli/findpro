@@ -1,0 +1,103 @@
+.get-started{
+    height: 46px;
+    background-color: #009F95;
+    @include fontFamily("source-regular", 20px, #fff, 24px);
+    border-radius: 8px;
+    padding:10px 40px;
+    border:none;
+    margin-left: 10px;
+}
+
+.s-more{
+    @include fontFamily("source-regular", 18px, #003B41, 24px);
+    text-align: center;
+    display: block;
+    margin-top:40px;
+    &:hover{
+        color:#003B41;
+    }
+}
+
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden
+}
+
+//STYLE
+.checkbox-ios{
+  width: 20px + 55px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  @extend .clearfix;
+  
+    &__toggle{
+        display: none;
+    }
+    &__toggle + &__label{//no checked
+    display: block;
+    position: relative;
+        transition: .3s;
+        border-radius: 50px;
+        background-color: #C7C7C7;
+        height: 35px;
+        margin-bottom: 0;
+    cursor: pointer;
+        &:before{
+            transition: .3s;
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 40%;
+            background-color: #fff;
+            width: 41px;
+            height: 30px;
+            top: 2px;
+            left: 5px;
+        }
+    }
+    &__value{
+        display: block;
+        float: left;
+        width: 50%;
+        font-size: 11px;
+        text-align: center;
+        margin-top: 20px + 15px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        &.left{
+            text-align: left;
+      font-weight: bold;
+        }
+        &.right{
+            text-align: right;
+        }
+    }
+  &__toggle:checked + &__label{//checked
+        background-color: #009F95;
+        &:before{
+      left: calc(100% - 40px - 5px);
+        }
+    .right{
+      font-weight: bold;
+    }
+    .left{
+      font-weight: normal;
+    }
+    }
+
+  &--blue{
+    .checkbox-ios__toggle:checked + .checkbox-ios__label{
+      background-color: #2a9db3;
+    }
+  }
+
+  &--alert{
+    .checkbox-ios__toggle:checked + .checkbox-ios__label{
+      background-color: #cf201b;
+    }
+  }
+}

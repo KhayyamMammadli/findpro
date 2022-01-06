@@ -1,0 +1,32 @@
+///* Absolute 
+//-------------------------------------*/
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  @if $top != auto { top: $top; }
+  @if $right != auto { right: $right; }
+  @if $bottom != auto { bottom: $bottom; }
+  @if $left != auto { left: $left; }
+  position: absolute;
+}
+
+///* Transform
+//-------------------------------------*/
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+  -ms-transform: $transform; // IE9 only
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+
+
+
+
+/// font-family
+@mixin  fontFamily($font-family, $font-size,  $color : initial, $line-height: normal) {
+font-family: $font-family;
+@if $font-size != initial { font-size: $font-size; }
+@if $color != initial { color: $color; }
+@if $line-height != normal { line-height: $line-height; }
+
+}
+

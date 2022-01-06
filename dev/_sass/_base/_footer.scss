@@ -1,0 +1,37 @@
+footer{
+    border-top:1px solid #00B1AD;
+    border-bottom:1px solid #00B1AD;
+    padding: 35px 0;
+    .foot-item{
+        .foot-logo{
+            width: 100%;
+        }
+
+        ul{
+            p{
+                @include fontFamily("source-semibold", 20px, #003B41, 24px);
+                margin-bottom: 30px;
+            }
+            li{
+                a{
+                    @include fontFamily("source-regular", 18px, #003B41, 18px);
+                    &:hover{
+                        color:#00B1AD;
+                    }
+                }
+                margin-bottom: 10px;
+                
+            }
+        }
+
+        .social-icon{
+            ul{
+                display: flex;
+                margin-top:20px;
+                li{
+                    margin-right: 10px;;
+                }
+            }
+        }
+    }
+}

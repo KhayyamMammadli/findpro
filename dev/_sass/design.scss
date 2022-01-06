@@ -1,0 +1,44 @@
+//atom
+@import "_atom/mixins";
+@import "_atom/variables";
+@import "_atom/grid";
+@import "_atom/project-ui";
+
+
+//base
+@import "_base/header";
+@import "_base/footer";
+@import "_base/ui-view";
+
+
+// quarks
+@import "_quarks/buttons";
+@import "_quarks/fonts";
+@import "_quarks/forms";
+@import "_quarks/helperclasses";
+@import "_quarks/icons";
+@import "_quarks/links";
+@import "_quarks/list";
+@import "_quarks/nav";
+@import "_quarks/paragraphs";
+@import "_quarks/tables";
+@import "_quarks/select";
+@import "_quarks/sidebar";
+
+
+// plugins
+// @import "_plugins/owl";
+// @import "plugins/fontawesome";
+
+
+
+//* Font families //-------------------------------------*/
+/*@each $slug, $fonts in
+($slug , $fonts)
+{
+ .font-#{$slug}
+ {
+   font-family: "#{$fonts}", "Helvetica Neue",Helvetica,Arial,sans-serif;
+ }
+} */
+@import "style";

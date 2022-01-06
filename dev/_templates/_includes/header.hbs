@@ -1,0 +1,47 @@
+<header {{#is main-page false}} class="main-header" {{/is}}>
+    <div class="container">
+        <nav>
+            <a href="index.html"><img src="img/log.svg" class="brand-logo" alt=""></a>
+            {{#is userblock false}}
+            <div class="center-menu" >
+                <ul class="list-menu">
+                    <li><a href="">Menu1</a></li>
+                    <li><a href="">Menu2</a></li>
+                    <li><a href="">Menu3</a></li>
+                    <li><a href="">Menu4</a></li>
+                    <li><a href="">Menu5</a></li>
+                    <li><a href="">Menu6</a></li>
+                </ul>
+            </div>
+            {{/is}}
+            {{#is d-noneuser false}}
+            <div class="head-right">
+                <ul class="list-menu">
+                    <li><a href="SignUpPro.html" class="signupPro">Sign up <span>as Pro</span></a></li>
+                    <li><a href="login.html" class="link">Log in</a></li>
+                </ul>
+                {{!-- <ul class="accout-list">
+                    <li><a href=""><img src="img/profile.svg" alt=""> Name <img src="img/iccccc.svg" alt=""></a>
+                        <ul class="account-dropdown">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Inbox</a></li>
+                            <li><a href="notification.html">Notifications</a></li>
+                            <li><a href="">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul> --}}
+            </div>
+            {{/is}}
+
+            {{#is accaount-struktor false}}
+                <div class="account-inner-list">
+                    <ul class="account-data">
+                        <li><a href="">İşlerim</a></li>
+                        <li><a href="">Hesab ayarlari</a></li>
+                    </ul>
+                </div>
+            {{/is}}
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration:none !important;
+}
+
+html{
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+
+.h500{
+    height: 530px !important;
+}
+
+.h250{
+    height: 250px !important;
+}
+
+.text-left{
+    left: 20% !important;
+}
+
+
+
