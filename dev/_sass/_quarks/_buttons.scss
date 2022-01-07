@@ -29,7 +29,7 @@
 
 //STYLE
 .checkbox-ios{
-  width: 20px + 55px;
+  width: 20px + 30px;
   margin: 0 auto;
   margin-bottom: 10px;
   @extend .clearfix;
@@ -43,7 +43,7 @@
         transition: .3s;
         border-radius: 50px;
         background-color: #C7C7C7;
-        height: 35px;
+        height: 28px;
         margin-bottom: 0;
     cursor: pointer;
         &:before{
@@ -51,11 +51,11 @@
             content: "";
             display: block;
             position: absolute;
-            border-radius: 40%;
+            border-radius: 100%;
             background-color: #fff;
-            width: 41px;
-            height: 30px;
-            top: 2px;
+            width: 25px;
+            height: 25px;
+            top: 1px;
             left: 5px;
         }
     }
@@ -79,7 +79,7 @@
   &__toggle:checked + &__label{//checked
         background-color: #009F95;
         &:before{
-      left: calc(100% - 40px - 5px);
+      left: calc(100% - 21px - 5px);
         }
     .right{
       font-weight: bold;

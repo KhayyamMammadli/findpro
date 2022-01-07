@@ -17,19 +17,39 @@ accaount-struktor: false
                     <ul class="profile-list">
                         <li>
                             <img src="img/user.png" alt="">
-                            <a href="">Profile Melumatlrı</a>
+                            <a href="profile.html">Profile Melumatlrı</a>
                         </li>
                         <li>
-                            <img src="img/setting.png" alt="">
-                            <a href="settings-account.html">Hesab Ayarları</a>
+                            <img src="img/credit-card.png" alt="">
+                            <a href="card.html" class="active">Büdcə və Ödənişlər</a>
                         </li>
                         <li>
-                            <img src="img/setting.png" alt="">
+                            <img src="img/gear.png" alt="">
+                            <a href="settings-account.html">Təhlükəsizlik ayarları</a>
+                        </li>
+                        <li>
+                            <img src="img/repairing-service.png" alt="">
+                            <a href="services.html">Xidmətlərim</a>
+                        </li>
+                        <li>
+                            <img src="img/address.png" alt="">
+                            <a href="work-areal.html">İş arealı</a>
+                        </li>
+                        <li>
+                            <img src="img/customer-service.png" alt="">
+                            <a href="">Əlavə xidmətlər</a>
+                        </li>
+                        <li>
+                            <img src="img/inbox.png" alt="">
+                            <a href="">Gələnlər qutusu</a>
+                        </li>
+                        <li>
+                            <img src="img/location.png" alt="">
                             <a href="address.html">Ünvan məlumatları</a>
                         </li>
                         <li>
-                            <img src="img/setting.png" alt="">
-                            <a href="card.html">kart məlumatları</a>
+                            <img src="img/notification.png" alt="">
+                            <a href="account-notification.html">Bildiriş</a>
                         </li>
                     </ul>
                 </div>
@@ -39,9 +59,11 @@ accaount-struktor: false
                     <h3>Kart məlumatlari</h3>
                     <div class="row mt-4">
                         <div class="col-md-2">
-                            <div class="left">
+                            <div class="left d-block">
                                 <label for="">Balance</label>
-                                <input type="text" value="205 AZN">
+                                <div>
+                                    <span>205 AZN</span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -68,6 +90,20 @@ accaount-struktor: false
                                     <div class="col-md-12">
                                         <input type="text" placeholder="Name & Surname">
                                     </div>
+                                </div>
+                                <div class="checkbox-box">
+                                    <span>
+                                        <input type="checkbox">
+                                        Save my card
+                                    </span>
+                                    <span>
+                                        <input type="checkbox">
+                                        Make this my default credit card
+                                    </span>
+                                    <span>
+                                        <input type="checkbox">
+                                        Auto-refill. Refill my FindPros balance automaticly
+                                    </span>
                                 </div>
                                 
                                 <button>Kartı əlavə et</button>
@@ -102,6 +138,124 @@ accaount-struktor: false
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-history">
+                        <h3>Payment history</h3>
+
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <select name="" id="">
+                                        <option value="">Weekly</option>
+                                        <option value="">Weekly</option>
+                                        <option value="">Weekly</option>
+                                        <option value="">Weekly</option>
+                                        <option value="">Weekly</option>
+                                        <option value="">Weekly</option>
+                                        <option value="">Weekly</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <select name="" id="">
+                                        <option value="">Monthly</option>
+                                        <option value="">Monthly</option>
+                                        <option value="">Monthly</option>
+                                        <option value="">Monthly</option>
+                                        <option value="">Monthly</option>
+                                        <option value="">Monthly</option>
+                                        <option value="">Monthly</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <select name="" id="">
+                                        <option value="">Yearly</option>
+                                        <option value="">Yearly</option>
+                                        <option value="">Yearly</option>
+                                        <option value="">Yearly</option>
+                                        <option value="">Yearly</option>
+                                        <option value="">Yearly</option>
+                                        <option value="">Yearly</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>Title</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h4>Paid</h4>
+                                    <p>12.12.2022</p>
+                                </th>
+                                <th>
+                                    <h5>67.67$</h5>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h4>Paid</h4>
+                                    <p>12.12.2022</p>
+                                </th>
+                                <th>
+                                    <h5>67.67$</h5>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h4>Paid</h4>
+                                    <p>12.12.2022</p>
+                                </th>
+                                <th>
+                                    <h5>67.67$</h5>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h4>Paid</h4>
+                                    <p>12.12.2022</p>
+                                </th>
+                                <th>
+                                    <h5>67.67$</h5>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h4>Paid</h4>
+                                    <p>12.12.2022</p>
+                                </th>
+                                <th>
+                                    <h5>67.67$</h5>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h4>Paid</h4>
+                                    <p>12.12.2022</p>
+                                </th>
+                                <th>
+                                    <h5>67.67$</h5>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h4>Paid</h4>
+                                    <p>12.12.2022</p>
+                                </th>
+                                <th>
+                                    <h5>67.67$</h5>
+                                </th>
+                            </tr>
+                        </table>
+                        <div class="button-block">
+                            <button>Download List</button>
                         </div>
                     </div>
                 </div>

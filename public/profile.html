@@ -30,10 +30,23 @@
             <nav>
                 <a href="index.html"><img src="img/log.svg" class="brand-logo" alt=""></a>
     
-                    <div class="account-inner-list">
-                        <ul class="account-data">
-                            <li><a href="">İşlerim</a></li>
-                            <li><a href="">Hesab ayarlari</a></li>
+                    <div class="account-inner-block d-flex">
+                        <div class="account-inner-list">
+                            <ul class="account-data">
+                                <li><a href="">İşlerim</a></li>
+                                <li><a href="profile.html">Hesab ayarlari</a></li>
+                            </ul>
+                        </div>
+                        <div class="balance-block">
+                            <p><img src="img/star.png" alt="">Öncelik:#891</p>
+                            <p><img src="img/money.png" alt="">Qalan balans: 200 </p>
+                        </div>
+                        <ul class="user-box">
+                            <li><img src="" alt=""> Name Surname
+                                <ul class="dropdown">
+                                    <li><a href="">Log out</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
             </nav>
@@ -53,26 +66,46 @@
                     <ul class="profile-list">
                         <li>
                             <img src="img/user.png" alt="">
-                            <a href="">Profile Melumatlrı</a>
+                            <a href="profile.html" class="active">Profile Melumatlrı</a>
                         </li>
                         <li>
-                            <img src="img/setting.png" alt="">
-                            <a href="settings-account.html">Hesab Ayarları</a>
+                            <img src="img/credit-card.png" alt="">
+                            <a href="card.html">Büdcə və Ödənişlər</a>
                         </li>
                         <li>
-                            <img src="img/setting.png" alt="">
+                            <img src="img/gear.png" alt="">
+                            <a href="settings-account.html">Təhlükəsizlik ayarları</a>
+                        </li>
+                        <li>
+                            <img src="img/repairing-service.png" alt="">
+                            <a href="services.html">Xidmətlərim</a>
+                        </li>
+                        <li>
+                            <img src="img/address.png" alt="">
+                            <a href="work-areal.html">İş arealı</a>
+                        </li>
+                        <li>
+                            <img src="img/customer-service.png" alt="">
+                            <a href="">Əlavə xidmətlər</a>
+                        </li>
+                        <li>
+                            <img src="img/inbox.png" alt="">
+                            <a href="">Gələnlər qutusu</a>
+                        </li>
+                        <li>
+                            <img src="img/location.png" alt="">
                             <a href="address.html">Ünvan məlumatları</a>
                         </li>
                         <li>
-                            <img src="img/setting.png" alt="">
-                            <a href="card.html">kart məlumatları</a>
+                            <img src="img/notification.png" alt="">
+                            <a href="account-notification.html">Bildiriş</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-9">
                 <div class="profile-right">
-                    <h3>Hesab ayarları</h3>
+                    <h3>Profile Melumatlrı</h3>
                     <div class="profile-img">
                         <img src="" alt="">
                     </div>
@@ -86,12 +119,29 @@
                             <input type="text" id="surname" placeholder="Soyadınız">
                         </div>
                         <div class="form-group">
+                            <label for="business">Biznes adı</label>
+                            <input type="text" id="business" placeholder="Biznes adı">
+                        </div>
+                        <div class="form-group">
+                            <label for="employees">İşçilərin sayı</label>
+                            <select name="" id="">
+                                <option value="">İşçilərin sayı</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" placeholder="E-poçtunuz">
                         </div>
                         <div class="form-group">
                             <label for="phone">Telefon nömrəsi</label>
                             <input type="phone" id="phone" placeholder="Telefon nömrəsi">
+                        </div>
+                        <div class="form-group">
+                            <label for="qeyd">Why should customers choose your services</label>
+                            <textarea name="" id="qeyd" placeholder="why should customers choose your services"> </textarea>
                         </div>
                         <button>Melumatları yenilə</button>
                     </form>

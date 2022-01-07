@@ -17,7 +17,7 @@
   padding:30px 0;
   .profile-left{
     padding:30px 0px;
-    border-right: 1px solid rgb(51, 51, 51);
+    
     h3{
       @include fontFamily("source-bold", 36px, #009F95, 40px);
     }
@@ -30,6 +30,9 @@
         align-items: center;
         a{
           @include fontFamily("source-bold", 18px, #a4a8a8, 24px);
+        }
+        .active{
+          color:#1c9cef;
         }
         img{
           height: 24px;
@@ -49,7 +52,8 @@
   }
 
   .profile-right{
-    padding:0 200px 0 30px;
+    padding:0 100px 0 30px;
+    border-left: 1px solid rgb(51, 51, 51);
     h3{
       @include fontFamily("source-bold", 32px, rgb(116, 116, 116), 40px);
       
@@ -65,6 +69,28 @@
         border:1px solid #000;
       }
     }
+
+    .message-box{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border:1px solid rgb(197, 197, 197);
+      border-radius: 16px;
+      margin-bottom: 20px;
+      padding:10px 20px;
+      .text{
+        p{
+          @include fontFamily("source-bold", 18px, rgb(116, 116, 116), 24px);
+          margin: 0;
+        }
+        p+p{
+          @include fontFamily("source-regular", 16px, rgb(116, 116, 116), 24px);
+        }
+      }
+    }
+
+
     form{
       margin-top: 80px;
       .form-group{
@@ -76,21 +102,32 @@
         select{
           width: 100%;
           height: 44px;
-          @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
+          @include fontFamily("source-regular", 16px, rgb(190, 190, 190), 22px);
           outline: none;
           border: 1px solid rgb(190, 190, 190);
           border-radius: 4px;
+        }
+        textarea{
+          width: 100%;
+          resize: none;
+          border: 1px solid rgb(190, 190, 190);
+          border-radius: 4px;
+          height: 100px;
+          @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
+          padding:10px 8px;
+          &::placeholder{
+            @include fontFamily("source-regular", 16px, rgb(190, 190, 190), 22px);
+          }
         }
         input{
           padding:10px 8px;
           outline: none;
           border: 1px solid rgb(190, 190, 190);
-          border: 1px solid rgb(190, 190, 190);
           @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
           border-radius: 4px;
           width: 100%;
           &::placeholder{
-            @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
+            @include fontFamily("source-regular", 16px, rgb(190, 190, 190), 22px);
           }
         }
       }
@@ -114,16 +151,24 @@
         @include fontFamily("source-bold", 16px, #009F95, 22px);
         margin-bottom: 5px;
       }
+      span{
+        border: 1px solid rgb(190, 190, 190);
+        padding:10px 8px;
+        @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
+        border-radius: 4px;
+        width: 100%;
+        display: block;
+      }
+
       input{
         padding:10px 8px;
         outline: none;
-        border: 1px solid rgb(190, 190, 190);
         border: 1px solid rgb(190, 190, 190);
         @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
         border-radius: 4px;
         width: 100%;
         &::placeholder{
-          @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
+          @include fontFamily("source-regular", 16px, rgb(190, 190, 190), 22px);
         }
       }
     }
@@ -132,6 +177,20 @@
       padding-left: 20px;
       button{
         width: 100%;
+      }
+
+      .checkbox-box{
+        margin-bottom: 30px;
+        span{
+          display: flex;
+          @include fontFamily("source-bold", 14px, red, 22px);
+          align-items: center;
+          margin-bottom: 10px;
+          input{
+            width: 20px;
+            margin-bottom: 0px;
+          }
+        }
       }
       
       img{
@@ -190,5 +249,169 @@
         }
       }
     }
+
+    .payment-history{
+      margin-top:50px;
+      select{
+        width: 100%;
+        height: 44px;
+        @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
+        outline: none;
+        border: 1px solid rgb(190, 190, 190);
+        border-radius: 4px;
+      }
+      table{
+        width: 100%;
+        margin-top:30px;
+        tr{
+          border-bottom: 1px solid rgb(214, 214, 214);
+          th{
+            @include fontFamily("source-bold", 18px, #000, 22px);
+            margin-bottom: 20px;
+            h4{
+              @include fontFamily("source-regular", 16px, #000, 22px);
+              margin-top: 20px;
+              margin-bottom: 0px;
+            }
+            p{
+              @include fontFamily("source-regular", 14px, #000, 22px);
+            }
+            h5{
+              @include fontFamily("source-regular", 18px, #000, 22px);
+            }
+          }
+        }
+      }
+      .button-block{
+        display: flex;
+        justify-content: flex-end;
+        button{
+          background-color: #1c9cef;
+          padding:10px 20px;
+          text-align: center;
+          border: 1px solid #1c9cef;
+          border-radius: 4px;
+          @include fontFamily("source-regular", 18px, #fff, 22px);
+          margin-top: 30px;
+          
+        }
+      }
+    }
+
+    .work-areal{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      h4{
+        @include fontFamily("source-bold", 22px, #1c9cef, 30px);
+        text-align: center;
+        margin-bottom: 24px;
+      }
+
+      p{
+        @include fontFamily("source-regular", 18px, #1c9cef, 24px);
+        text-align: center;
+      }
+      .checkbox-block{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+      div{
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        span{
+          display: flex;
+          @include fontFamily("source-bold", 14px, rgb(129, 129, 129), 22px);
+          align-items: center;
+          margin-bottom: 10px;
+          input{
+            width: 20px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+      }
+
+      label{
+        @include fontFamily("source-bold", 16px, #009F95, 22px);
+        margin-bottom: 5px;
+      }
+      select{
+        width: 100%;
+        height: 44px;
+        @include fontFamily("source-regular", 16px, rgb(190, 190, 190), 22px);
+        outline: none;
+        border: 1px solid rgb(190, 190, 190);
+        border-radius: 4px;
+      }
+      .map-box{
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+    }
+
+
+    .service-box{
+      margin-top:40px;
+      .right{
+        label{
+          @include fontFamily("source-bold", 16px, #009F95, 22px);
+          margin-bottom: 5px;
+        }
+        input{
+          padding:10px 8px;
+          outline: none;
+          border: 1px solid rgb(190, 190, 190);
+          @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
+          border-radius: 4px;
+          width: 100%;
+          margin-bottom: 15px;
+          &::placeholder{
+            @include fontFamily("source-bold", 16px, rgb(190, 190, 190), 22px);
+          }
+        }
+
+        textarea{
+          width: 100%;
+          border: 1px solid rgb(190, 190, 190);
+          padding:10px 8px;
+          border-radius: 4px;
+          resize: none;
+          height: 120px;
+          margin-bottom: 30px;
+        }
+      }
+      .scroll-list{
+        width: 100%;
+        height: 300px;
+        border: 1px solid rgb(190, 190, 190);
+        overflow-y: scroll;
+        padding:10px 15px;
+        margin-bottom: 20px;
+        table{
+          width: 100%;
+          tr{
+            border-bottom: 1px solid rgb(190, 190, 190);
+            td{
+              @include fontFamily("source-bold", 14px, rgb(190, 190, 190), 22px);
+            }
+          }
+        }
+        }
+        .services-list{
+          tr{
+            th{
+              @include fontFamily("source-bold", 14px,#000, 16px);
+            }
+            td{
+              @include fontFamily("source-regular", 13px,#000, 16px);
+              
+            }
+          }
+        }
+      }
+    
+    }
   }
-}

@@ -109,4 +109,64 @@ header{
             display: block;
         }
     }
+
+    
+}
+
+.account-inner-block{
+    align-items: center
+}
+
+
+.balance-block{
+    margin-left: 30px;
+    margin-top: -10px;
+    p{
+        @include fontFamily("source-bold", 12px, #6e7081, 16px);
+        
+        margin:0;
+        img{
+            height: 14px;
+            margin-right: 10px;
+            
+        }
+    }
+}
+
+
+.user-box{
+    li{
+        @include fontFamily("source-bold", 18px, #6e7081, 20px);
+        cursor: pointer;
+        position: relative;
+        img{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 100%;
+        }
+
+        .dropdown{
+            display: none;
+            position: absolute;
+            padding:10px 20px;
+            position: absolute;
+            
+            left: auto;
+            min-width: 100%;
+            width: auto;
+            height: auto;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px #0000004d;
+            li{
+                a{
+                    @include fontFamily("source-regular", 18px, #6e7081, 20px);
+                }
+            }
+
+        }
+        &:hover .dropdown{
+            display: block;
+        }
+    }
 }
